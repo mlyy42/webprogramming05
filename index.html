@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h2>고객의 소리</h2>
+</head>
+<body>
+    <form>
+    아이디: <input type="text" name="name"><br>
+    구매번호: <input type="text" name="number" size=10><br>
+    패스워드: <input type="password" name="pass"><br>
+    <form name="input" action="getfeedback.jsp" method="get">
+        제품을 평가해주세요.<br/>
+        <textarea name="feedback" rows="5" cols="50"></textarea><br>
+        <input type="reset" name="reset" value="reset">
+        <input type="submit" name="submit" value="제출">
+    </form>
+    </form>
+    <!--reset과 submit의 차이는 reset은 페이지 새로고침이 없이 값이 초기화된다. 하지만 submit의 경우 페이지 전체가 초기화된다.-->
+
+    <h2>선호도 조사입니다.</h2>
+    <form>
+        성별:
+        <input type="radio" name="gender" value="male">남성
+        <input type="radio" name="gender" value="female">여성<br>
+        과일 선택:
+        <input type="checkbox" name="fruits" value="apple" checked>사과
+        <input type="checkbox" name="fruits" value="grape">포도
+        <input type="checkbox" name="fruits" value="orange">오렌지<br>
+        <input type="button" value="눌러볼래?" onclick="alert('환영합니다.')">
+    </form>
+    <button type="button"><img src="./leo.png"></button>
+</body>
+</html>
