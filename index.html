@@ -1,33 +1,49 @@
+﻿
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <h2>고객의 소리</h2>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <form>
-    아이디: <input type="text" name="name"><br>
-    구매번호: <input type="text" name="number" size=10><br>
-    패스워드: <input type="password" name="pass"><br>
-    <form name="input" action="getfeedback.jsp" method="get">
-        제품을 평가해주세요.<br/>
-        <textarea name="feedback" rows="5" cols="50"></textarea><br>
-        <input type="reset" name="reset" value="reset">
-        <input type="submit" name="submit" value="제출">
+   <form action="" method="post" name="form1">
+        이름을 입력하세요: <input type="text" required placeholder="홍길"><br>
+        자기소개를 하세요: <input type="text" required placeholder="자기소개를 입력하세요."><br>
+        <br>비밀번호 잃음<br>
+        <select name="password" id="password_1">
+            <option value="1">나의 살던 고향은</option>
+            <option value="2">꽃피는 산골</option>
+            <option value="3">복숭아꽃 살구꽃</option>
+            <option value="4">아기 진달래</option>
+        </select>
+        <p>선호하는 브라우저</p>
+        <input list="browsers" name="braowser">
+        <datalist id="browsers">
+            <option value="구글크롬"></option>
+            <option value="오페라"></option>
+            <option value="사파리"></option>
+        </datalist>
     </form>
+    <hr>
+    <h1>캐해능력고사</h1>
+    <hr>
+    <h2>다음 보기를 보고 어떤 스토리의 대사인지 맞추시오.</h2>
+    <form method="post" name="form1">
+        <fieldset>
+            <legend><보기></legend>
+            나인지, 내가 만드는 곡인지, 둘 중 하나를 선택하라고<br>
+            날 좋아하고, 동료가, 친구가 되고 싶다면.. 내가 만든 곡을 두 번 다시 쓸 수 없어<br>
+            하지만, 내 적이 된다면 얼마든지 무료로 곡을 써도 상관없다고<br>
+            (중략)<br>
+            너 때문이야! 제일 처음 만나고, 친해진 네가 항상 열심이었으니까!
+        </fieldset>
+        <input type="radio" name="knights" value="호러나">호러나이트
+        <input type="radio" name="knights" value="답례제">답례제
+        <input type="radio" name="knights" value="쳌메">체크메이트
+        <input type="radio" name="knights" value="화월">화조풍월
+        <input type="radio" name="knights" value="흑백">흑과 백의 듀얼
     </form>
-    <!--reset과 submit의 차이는 reset은 페이지 새로고침이 없이 값이 초기화된다. 하지만 submit의 경우 페이지 전체가 초기화된다.-->
-
-    <h2>선호도 조사입니다.</h2>
-    <form>
-        성별:
-        <input type="radio" name="gender" value="male">남성
-        <input type="radio" name="gender" value="female">여성<br>
-        과일 선택:
-        <input type="checkbox" name="fruits" value="apple" checked>사과
-        <input type="checkbox" name="fruits" value="grape">포도
-        <input type="checkbox" name="fruits" value="orange">오렌지<br>
-        <input type="button" value="눌러볼래?" onclick="alert('환영합니다.')">
-    </form>
-    <button type="button"><img src="./leo.png"></button>
 </body>
 </html>
