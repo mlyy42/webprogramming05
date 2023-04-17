@@ -5,24 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        a:link{
+            color: blue;
+        }
+        a:visited{color: green;}
+        p:hover{ background-color: gray;}
+        h1,p{
+        color: red;
+       }
+       #special{
+        color: blue;
+       }
+       .type1{
+        background-color: violet;
+        color: aliceblue;
+       }
+       *
+       {color: aquamarine;}
+    </style>
 </head>
 <body>
-   <form action="" method="post" name="form1">
-        이름을 입력하세요: <input type="text" required placeholder="홍길"><br>
-        자기소개를 하세요: <input type="text" required placeholder="자기소개를 입력하세요."><br>
-        <br>비밀번호 잃음<br>
-        <select name="password" id="password_1">
-            <option value="1">나의 살던 고향은</option>
-            <option value="2">꽃피는 산골</option>
-            <option value="3">복숭아꽃 살구꽃</option>
-            <option value="4">아기 진달래</option>
-        </select>
-        <p>선호하는 브라우저</p>
-        <input list="browsers" name="braowser">
-        <datalist id="browsers">
-            <option value="구글크롬"></option>
-            <option value="오페라"></option>
-            <option value="사파리"></option>
-        </datalist>
-        </body>
+    <h1>웹프</h1>
+    <p class="type1">html</p>
+    <p id="special">css</p>
+    <p class="type1">java</p>
+    <p>data</p>
+    <a href="http://www.w3c.org">w3c</a>
+</body>
 </html>
