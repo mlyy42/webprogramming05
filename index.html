@@ -6,30 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        th,td{
+        body{
+            background-image: url('./go.png');
+        }
+        input[type=text]{
+            border: 3px solid orange;
             background-color: skyblue;
+            color: greenyellow;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        input[type=email]{
+            border: 1px solid orange;
+            background-color: skyblue;
+            color: greenyellow;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        input[type=submit]{
+            background-color: skyblue;
+            border: 3px solid orange;
             color: white;
+            padding: 10px;
+        }
+        textarea:hover{
+            width: 100px;
+            height: 100px;
+            background-image: url('./mini.webp');
+            background-size: 100% 100%;
         }
     </style>
-</head>
+</head>       
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>학번</th><th>이름</th><th>성적</th><th>학점</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td><td>Bill</td><td>98</td><td>A+</td>
-            </tr>
-            <tr>
-                <td>2</td><td>Steve</td><td>89</td><td>B+</td>
-            </tr>
-            <tr>
-                <td>3</td><td>Larry</td><td>93</td><td>A-</td>
-            </tr>
-        </tbody>
-    </table>
+        <h2>상품 평</h2>
+        <p>받으신 상품을 평가해주세요.</p>
+        <div>
+            <form action="process.jsp">
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" placeholder="이름"><br>
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" placeholder="이메일"><br>
+                <label for="subject">상품 평</label>
+                <textarea id="subject" name="subject" placeholder="cute" style="height:100px"></textarea>
+                </form>
+                <input type="submit" value="Submit">
+            
+            </div>
 </body>
 </html>
