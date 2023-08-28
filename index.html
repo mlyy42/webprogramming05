@@ -5,52 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            background-image: url('./go.png');
+    <script>
+        let time = new Date().getHours();
+        let msg;
+        document.getElementById("test1").innerHTML='time='+time;
+        if(time<12){
+            msg="Good Morning";
         }
-        input[type=text]{
-            border: 3px solid orange;
-            background-color: skyblue;
-            color: greenyellow;
-            font-weight: bold;
-            margin-bottom: 15px;
+        else if (time<18){
+            msg="Good Afternoon";
         }
-        input[type=email]{
-            border: 1px solid orange;
-            background-color: skyblue;
-            color: greenyellow;
-            font-weight: bold;
-            margin-bottom: 15px;
+        else{
+            msg="Good Evening";
         }
-        input[type=submit]{
-            background-color: skyblue;
-            border: 3px solid orange;
-            color: white;
-            padding: 10px;
-        }
-        textarea:hover{
-            width: 100px;
-            height: 100px;
-            background-image: url('./mini.webp');
-            background-size: 100% 100%;
-        }
-    </style>
-</head>       
+        document.getElementById("test2").innerHTML=msg;
+    </script>
+</head>
 <body>
-        <h2>상품 평</h2>
-        <p>받으신 상품을 평가해주세요.</p>
-        <div>
-            <form action="process.jsp">
-                <label for="name">이름</label>
-                <input type="text" id="name" name="name" placeholder="이름"><br>
-                <label for="email">이메일</label>
-                <input type="email" id="email" name="email" placeholder="이메일"><br>
-                <label for="subject">상품 평</label>
-                <textarea id="subject" name="subject" placeholder="cute" style="height:100px"></textarea>
-                </form>
-                <input type="submit" value="Submit">
-            
-            </div>
+    
 </body>
 </html>
