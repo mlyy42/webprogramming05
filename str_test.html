@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test">다음에 학습할 내용은 HTML입니다.</p>
+    <button onclick="strch()">HTML 학습을 끝냈으면 누르세요.</button>
+    <script>
+        // let str="Like father, like son.";
+        // result=str.match(/like/ig);
+        // document.write(result+'<br>');
+
+        // let p="The quick brown fox jumps over the lazy dog. DOG Dog doG";
+        // document.write(p.replace('dog','cat')+"<br>");
+        // let regex=/Dog/ig;
+        // document.write(p.replace(regex,'cat')+"<br>");
+
+        // let s="One,Two,Three,Four,Five";
+        // array=s.split(',');
+        // for(i=0;i<array.length;i++){
+        //     document.write(i+'-'+array[i]+"<br>");
+        // }
+
+        function strch(){
+            let text=document.getElementById("test").innerHTML;
+            document.getElementById("test").innerHTML = text.replace("HTML","JS");
+        }
+    </script>
+</body>
+</html>

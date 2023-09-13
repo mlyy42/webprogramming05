@@ -1,0 +1,40 @@
+<html>
+<head>
+    <script>
+        function calc(type) {
+            let x = parseFloat(document.calculator.number1.value);
+            if (type == 1)
+                y = Math.sin((x*Math.PI)/180.0);
+            else if (type == 2)
+                y = Math.log(x);
+            else if (type == 3)
+                y = Math.sqrt(X);
+            else if (type == 4)
+                y = Math.abs(x);
+            else if(type==5)
+                y=Math.floor(x);
+            else if(type==6)
+                y=Math.ceil(x);
+            else if(type==7)
+                y=Math.round(x);
+            document.calculator.total.value = y;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="calculator">
+        입력:               <input type="text" name="number1"><br />
+        계산 결과:          <input type="text" name="total"><br />
+
+        <input type="button" value="SIN" onclick="calc(1);">
+        <input type="button" value="LOG" onclick="calc(2);">
+        <input type="button" value="SQRT" onclick="calc(3);">
+        <input type="button" value="ABS" onclick="calc(4);">
+        <input type="button" value="FLOOR" onclick="calc(5);">
+        <input type="button" value="UP" onclick="calc(6);">
+        <input type="button" value="ROUND" onclick="calc(7);">
+    </form>
+
+</body>
+</html>
