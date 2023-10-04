@@ -1,0 +1,6 @@
+24강 HTML DOM Node 
+https://ossam5.tistory.com/238
+
+HTMLCollection과 NodeList, 너흰 누구니?
+
+https://merrily-code.tistory.com/212
