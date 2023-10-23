@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <style>
+        .button {
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+    <script>
+        function add() {
+            let number1, number2;
+            number1 = parseFloat(document.getElementById("number1").value);
+            number2 = parseFloat(document.getElementById("number2").value);
+            document.getElementById("result").value = number1 + number2;
+        }
+function b() {
+            let number1, number2;
+            number1 = parseFloat(document.getElementById("number1").value);
+            number2 = parseFloat(document.getElementById("number2").value);
+            document.getElementById("result").value = number1 - number2;
+        }
+function c() {
+            let number1, number2;
+            number1 = parseFloat(document.getElementById("number1").value);
+            number2 = parseFloat(document.getElementById("number2").value);
+            document.getElementById("result").value = number1 * number2;
+        }
+function d() {
+            let number1, number2;
+            number1 = parseFloat(document.getElementById("number1").value);
+            number2 = parseFloat(document.getElementById("number2").value);
+            document.getElementById("result").value = number1 / number2;
+        }
+    </script>
+<body>
+    숫자 1: <input type=text id="number1" value="9"><br>
+    숫자 2: <input type=text id="number2" value="6"><br>
+    <input type=button value="+" onClick="add()" class="button">
+    <input type=button value="-" onClick="b()" class="button">
+    <input type=button value="*" onClick="c()" class="button">
+    <input type=button value="/" onClick="d()" class="button"><br>
+    연산결과: <input type=text id="result" value="">
+</body>
+</html>
