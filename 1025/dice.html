@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>주사위 굴리기</title>
+    <style>
+        * {
+            font-family: 굴림, sans-serif;
+            text-align: center;
+        }
+
+        #dice1 {
+            height: 100px;
+            width: 100px;
+            margin: 10px auto;
+            background-color: orange;
+            border: 1px solid gray;
+            border-radius: 10px;
+            font-size: 80px;
+            line-height: 100px;
+        }
+
+        #dice2 {
+            height: 100px;
+            width: 100px;
+            margin: 10px auto;
+            background-color: skyblue;
+            border: 1px solid gray;
+            border-radius: 10px;
+            font-size: 80px;
+            line-height: 100px;
+        }
+    </style>
+    <script>
+        function roll1() {
+            let diceValue = Math.floor(Math.random() * 6) + 1; // 주사위 눈의 값 (1에서 6까지)
+            let diceElement = document.getElementById("dice1");
+            diceElement.textContent = diceValue;
+        }
+
+        function roll2() {
+            let diceValue = Math.floor(Math.random() * 6) + 1; // 주사위 눈의 값 (1에서 6까지)
+            let diceElement = document.getElementById("dice2");
+            diceElement.textContent = diceValue;
+        }
+    </script>
+</head>
+
+<body>
+    <h3>주사위 굴리기 게임입니다.</h3>
+    <p id="dice1"> </p>
+    <button onclick="roll1()">주사위1 굴리기</button>
+    <p id="dice2"> </p>
+    <button onclick="roll2()">주사위2 굴리기</button>
+</body>
+
+</html>
